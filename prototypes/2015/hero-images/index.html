@@ -1,58 +1,137 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Warby Parker</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="favicon.ico?v=1" />
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body class="theme-white">
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <section class="fullbleed">
-        <h1>Responsive Image Exploration</h1>
-    </section>
-    <section class="fullbleed img1"></section>
-    <section class="fullbleed img2"></section>
-    <section class="fullbleed img3"></section>
-    <section class="fullbleed img4"></section>
-    <section class="fullbleed img5 center-center">
-        <h2>Spring 2015</h2>
-    </section>
-    <section class="fullbleed img3 bottom-center">
-        <h2>Basso</h2>
-        <p>Winston in Cognac Tortoise with Pacific Crystal</BR> Percey in Oak Barrel with Sea Salt</p>
-    </section>
-    <section class="img7"></section>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'> -->
+	<link rel="shortcut icon" href="favicon.ico?v=1" />
 
-<!--     <section class="full-bleed-img img img1"></section>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title> &nbsp; Responsive Image Exploration</title>
+</head>
+<body>
+	<nav id="cd-vertical-nav">
+		<ul>
+			<li>
+				<a href="#section1" data-number="1">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Top</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section2" data-number="2">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Existing assets</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section3" data-number="3">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Center aligned</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section4" data-number="4">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Right aligned</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section5" data-number="5">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Bottom left aligned</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section6" data-number="6">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Text: center aligned</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section7" data-number="7">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Learnings</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
 
-    <section class="full-bleed-img img img2"><h1>Hola</h1></section> -->
+	<section id="section1" class="cd-section title-page">
+		<div class="content">
+			<img class="pinata" src="img/pinata-light.svg" alt="">
+			<img class="wp-logo" src="img/wp-logo.svg" alt="">
+			<h1>Responsive Imagery</h1>
+		</div>
+		<a href="#section2" class="cd-scroll-down cd-img-replace">scroll down</a>
+	</section><!-- cd-section -->
 
-    
+	<section id="section2" class="cd-section fullbleed">
+		<a href="#section3" class="cd-scroll-down cd-img-replace">scroll down</a>
+	</section><!-- cd-section -->
 
-<!--         <section class="full-bleed-img">
-            <picture>
-                <source media="(min-width: 45em)" srcset="img/large.png">
-                <source media="(min-width: 32em)" srcset="img/medium.png">
-                <img src="img/small.png" alt="The president giving an award.">
-            </picture>
-        </section> -->
+	<section id="section3" class="cd-section core-principle principle">
+		<a href="#section4" class="cd-scroll-down cd-img-replace">scroll down</a>
+	</section><!-- cd-section -->
 
-<!--         <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus tempore consequatur odit nulla inventore quisquam magnam hic nisi numquam sapiente fugit harum, nihil beatae accusantium libero doloribus autem delectus veritatis.</p> -->
+	<section id="section4" class="cd-section principle">
+		<a href="#section5" class="cd-scroll-down cd-img-replace">scroll down</a>
+	</section><!-- cd-section -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+	<section id="section5" class="cd-section principle">
+		<a href="#section6" class="cd-scroll-down cd-img-replace">scroll down</a>
+	</section><!-- cd-section -->	
 
-    </body>
+	<section id="section6" class="cd-section principle">
+		<div class="content-block">
+			<h2>Spring 2015</h2>
+			<a href="#section7" class="cd-scroll-down cd-img-replace">scroll down</a>
+		</div>
+	</section><!-- cd-section -->
+
+<!-- 
+<section id="section10" class="cd-section disney height-variable">
+		<div class="disney-principles">
+			<h2>Developer Guidelines</h2>
+			<p>A few basic pointers when implementing animation on the site.</p>
+			<h3>CSS vs javascript animation</h3>
+			<p><em>Use CSS when you have smaller, self-contained states for UI elements.</em> CSS transitions and animations are ideal for bringing a navigation menu in from the side, or showing a tooltip. You may end up using JavaScript to control the states, but the animations themselves will be in your CSS.</p>
+			<p><em>Use JavaScript when you need significant control over your animations.</em>Something that dynamically tracks a touch position, or an animation that you need to stop, pause, slow-down or reverse typically require you to use JavaScript.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quia quas explicabo ratione praesentium unde, dolorum? Explicabo magni, culpa neque praesentium placeat, et esse quo mollitia architecto, soluta quia eius.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quia quas explicabo ratione praesentium unde, dolorum? Explicabo magni, culpa neque praesentium placeat, et esse quo mollitia architecto, soluta quia eius.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quia quas explicabo ratione praesentium unde, dolorum? Explicabo magni, culpa neque praesentium placeat, et esse quo mollitia architecto, soluta quia eius.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quia quas explicabo ratione praesentium unde, dolorum? Explicabo magni, culpa neque praesentium placeat, et esse quo mollitia architecto, soluta quia eius.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quia quas explicabo ratione praesentium unde, dolorum? Explicabo magni, culpa neque praesentium placeat, et esse quo mollitia architecto, soluta quia eius.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quia quas explicabo ratione praesentium unde, dolorum? Explicabo magni, culpa neque praesentium placeat, et esse quo mollitia architecto, soluta quia eius.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quia quas explicabo ratione praesentium unde, dolorum? Explicabo magni, culpa neque praesentium placeat, et esse quo mollitia architecto, soluta quia eius.</p>
+		</div>
+		<a href="#section11" class="cd-scroll-down cd-img-replace">scroll down</a>
+	</section>
+ -->
+	<!-- cd-section -->
+
+
+	<section id="section7" class="cd-section principle">
+		<div class="content">
+			<h2>Learnings</h2>
+			<ul>
+				<li><p>Designing a number of hero module templates will give our Creative team the most flexibiilty with hero imagery. </p></li>
+				<li><p>With a responsive site, we'll need a different art direction for portrait screens. This means we'll need to cut images for portrait and landscape.</p></li>
+				<li><p>Creative could provide us with two versions of the hero at the specified portrait and landscape dimensions. We would use an automatic server side process to cut up the images to our desired image sizes.</p></li>
+			</ul>
+			<h3>Next steps</h3>
+			<ul>
+				<li><p>More testing and fine tuning of ideal image ratios</p></li>
+				<li><p>Determine whether it's best to use 100% or 95% height for hero imagery. 95% height gives users a hint that there is additional content below. 100% height feels more spacious and premium.</p></li>
+			</ul>
+		</div>
+		<a href="#section1" class="cd-scroll-up cd-img-replace">scroll up</a>
+	</section><!-- cd-section -->
+	
+	
+
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
 </html>
-
