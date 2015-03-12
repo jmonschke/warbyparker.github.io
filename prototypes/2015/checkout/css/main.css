@@ -568,7 +568,7 @@ body.theme-white {
 
 .content {
   width: 94%;
-  max-width: 420px;
+  max-width: 620px;
   margin: 0 auto; }
 
 header {
@@ -588,13 +588,34 @@ header {
     font-size: 42px;
     margin-top: 0.3em; }
 
+.notes {
+  background-color: #333;
+  color: #fff;
+  height: 100vh;
+  text-align: left;
+  position: relative; }
+  .notes h2 {
+    margin: 2em 0 0.2em 0; }
+  .notes h2 + p {
+    margin-top: 0; }
+  .notes ul {
+    padding-left: 0; }
+  .notes li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 1em; }
+
+.notes .content-header.content {
+  width: 640px; }
+
 .center-center {
   position: absolute;
   left: 50%;
   top: 50%;
   bottom: auto;
   right: auto;
-  transform: translateX(-50%) translateY(-50%); }
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%); }
 
 .content-header {
   width: 96%; }
