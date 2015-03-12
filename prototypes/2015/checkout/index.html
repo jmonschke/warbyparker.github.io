@@ -67,11 +67,16 @@
                 </form> -->
 
                 <span class="input input--akira">
-                    <input class="input__field input__field--akira" type="text" id="input-24" />
-                    <label class="input__label input__label--akira" for="input-24">
+                    <input class="input__field input__field--akira" type="text" id="email" list="providers" />
+                    <label class="input__label input__label--akira" for="email">
                         <span class="input__label-content input__label-content--akira field-email">Your email address</span>
                     </label>
                 </span>
+
+
+
+                <!-- <input type="email" id="email" placeholder="Type a gmail or yahoo email etc..."  /> -->
+
                  <span class="input input--akira">
                     <input class="input__field input__field--akira" type="text" id="input-25" />
                     <label class="input__label input__label--akira" for="input-25">
@@ -125,8 +130,10 @@
         <div class="content-header content center-center">
             <h2>Notes</h2>
             <ul>
+                <li>This is an early prototype so expect bugs. Please use Google Chrome.</li>
                 <li>First name and last name fields have been combined</li>
                 <li>Shipping address pulls from the Google Maps address database</li>
+                <li>The email address field suggests popular email providers after the user enters the "@" symbol. This interaction is buggy at the moment. </li>
                 <li>Billing address has been removed (ZIP code is included within the smart credit card field)</li>
                 <li>Promo code and gift code have been combined</li>
                 <li>Check out the one line, smart credit card form</li>
@@ -136,9 +143,10 @@
                 <li>Insert a field for "building / apartment number" after shipping address is entered</li>
                 <li>Client side and server side validation (e.g. checking for valid email and phone syntax)</li>
                 <li>Add correct input types to bring up the appropriate virtual keyboards on touch devices (e.g. Bring up the numbered keyboard for credit card information and phone number)</li>
-                <li>Add smart email form field which prepopulates common email providers like gmail and yahoo</li>
+                <li>Add total price including tax</li>
             </ul>
         </div>
+
     </section>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -191,6 +199,7 @@
     <script src="js/jquery.inputmask.js"></script>
     <script src="js/jquery.inputmask.date.extensions.js"></script>
     <script src="js/credit-card.js"></script>
+    <script src="js/email.prepopulation.js"></script>
 
     <!-- Material design click effects -->
     <script>
@@ -209,6 +218,9 @@
           TweenMax.to($feedback, 1.5, {scaleX: 1, scaleY: 1, opacity: 0, ease: Expo.easeOut});
         });
     </script>
+
+
+
 
     </body>
 </html>

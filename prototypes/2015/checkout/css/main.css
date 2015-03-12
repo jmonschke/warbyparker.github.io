@@ -1871,7 +1871,7 @@ Checkbox styles
 
 .input__field--akira:focus + .input__label--akira .input__label-content--akira.field-phone,
 .input--filled .input__label-content--akira.field-phone {
-  width: 230px; }
+  width: 170px; }
 
 .input__field--akira:focus + .input__label--akira .input__label-content--akira.field-promo,
 .input--filled .input__label-content--akira.field-promo {
@@ -2238,6 +2238,9 @@ legend {
     transform: translateX(10px); } }
 a {
   font-weight: bold; }
+
+input:-webkit-autofill {
+  color: #fff !important; }
 
 /**********************************************************
 Button css
