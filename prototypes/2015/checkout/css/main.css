@@ -591,9 +591,9 @@ header {
 .notes {
   background-color: #333;
   color: #fff;
-  height: 100vh;
   text-align: left;
-  position: relative; }
+  position: relative;
+  padding: 7em 0 7em 0; }
   .notes h2 {
     margin: 2em 0 0.2em 0; }
   .notes h2 + p {
@@ -604,6 +604,8 @@ header {
     list-style: none;
     position: relative;
     margin-bottom: 1em; }
+  .notes h3 {
+    margin-top: 1.5em; }
 
 .notes .content-header.content {
   width: 640px; }
