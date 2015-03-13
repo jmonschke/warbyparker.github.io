@@ -470,14 +470,14 @@
 		cardInstructionClass: "card-instruction",
 		animationWait: 600,
 		focusDelay: 200,
-		messageEnterCardNumber : "",
+		messageEnterCardNumber : "&nbsp;",
 		messageCardNumberError : "Please enter a valid credit card number",
 		messageExpiration : "Please enter your card's expiration month and year",
 		messageExpirationError : "Please enter a valid month and year",
 		messageCVV : "Please enter the three-digit CVV number found on the back of your card",
 		messageCVVAmEx : "Please enter your four-digit CVV number on the front of your card",
 		messageZip : "Please enter your billing zip code",
-		messageSuccess : ""
+		messageSuccess : "&nbsp;"
 	};
 
 }(jQuery));

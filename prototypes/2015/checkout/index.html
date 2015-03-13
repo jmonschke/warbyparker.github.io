@@ -37,14 +37,14 @@
         <div class="content credit-card-form">
             <h1> Checkout</h1>
             <h3>Total: $95 (free shipping)</h3>
-            <p>Returning customer? <a href="https://www.warbyparker.com/login">Sign in</a></p>
+            <p>Returning customer? <a href="#">Sign in</a></p>
    <!--          <div id="locationField">
                 <input id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text"></input>
             </div> -->
 
             <div>
                 <span class="input input--akira">
-                    <input class="input__field input__field--akira" type="text" id="input-23" autocomplete="on" />
+                    <input class="input__field input__field--akira" type="text" id="input-23" autocomplete />
                     <label class="input__label input__label--akira" for="input-23">
                         <span class="input__label-content input__label-content--akira field-name">Your name (first and last)</span>
                     </label>
@@ -67,7 +67,7 @@
                 </form> -->
 
                 <span class="input input--akira">
-                    <input class="input__field input__field--akira" type="text" id="email" list="providers" />
+                    <input class="input__field input__field--akira" type="email" id="email" list="providers" autocomplete="off" />
                     <label class="input__label input__label--akira" for="email">
                         <span class="input__label-content input__label-content--akira field-email">Your email address</span>
                     </label>
@@ -78,7 +78,7 @@
                 <!-- <input type="email" id="email" placeholder="Type a gmail or yahoo email etc..."  /> -->
 
                  <span class="input input--akira">
-                    <input class="input__field input__field--akira" type="text" id="input-25" />
+                    <input class="input__field input__field--akira" type="tel" id="input-25" autocomplete />
                     <label class="input__label input__label--akira" for="input-25">
                         <span class="input__label-content input__label-content--akira field-phone">Your phone number</span>
                     </label>
@@ -95,7 +95,7 @@
                     </label>
                 </span>  -->
                 <span class="input input--akira promo-code">
-                    <input class="input__field input__field--akira" type="text" id="input-27" />
+                    <input class="input__field input__field--akira" type="tel" id="input-27" />
                     <label class="input__label input__label--akira" for="input-28">
                         <span class="input__label-content input__label-content--akira field-promo">Promo or gift card code</span>
                     </label>
@@ -107,13 +107,13 @@
             <fieldset class="credit-card-group">
                 <legend>Credit card details</legend>
                 <label for="card-number">Credit Card Number</label>
-                <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="card-number" id="card-number">
+                <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="tel" class="card-number" id="card-number">
                 <label for="card-number">Expiration Date</label>
-                <input placeholder="MM/YY" pattern="[0-9]*" type="text" class="card-expiration" id="card-expiration">
+                <input placeholder="MM/YY" pattern="[0-9]*" type="tel" class="card-expiration" id="card-expiration">
                 <label for="card-number">CVV Number</label>
-                <input placeholder="CVV" pattern="[0-9]*" type="text" class="card-cvv" id="card-cvv">
+                <input placeholder="CVV" pattern="[0-9]*" type="tel" class="card-cvv" id="card-cvv">
                 <label for="card-number">Billing Zip Code</label>
-                <input placeholder="ZIP" pattern="[0-9]*" type="text" class="card-zip" id="card-zip">
+                <input placeholder="ZIP" pattern="[0-9]*" type="tel" class="card-zip" id="card-zip">
             </fieldset>
         
 
@@ -130,7 +130,7 @@
         <div class="content-header content center-center">
             <h2>Notes</h2>
             <ul>
-                <li>This is an early prototype so expect bugs. Please use Google Chrome.</li>
+                <li>This is an early prototype so expect bugs. Best viewed on Google Chrome Desktop.</li>
                 <li>First name and last name fields have been combined</li>
                 <li>Shipping address pulls from the Google Maps address database</li>
                 <li>The email address field suggests popular email providers after the user enters the "@" symbol. This interaction is buggy at the moment. </li>

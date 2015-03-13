@@ -2240,7 +2240,7 @@ a {
   font-weight: bold; }
 
 input:-webkit-autofill {
-  color: #fff !important; }
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.1) inset; }
 
 /**********************************************************
 Button css
@@ -2252,7 +2252,7 @@ Button css
   overflow: hidden;
   user-select: none;
   background-color: #3AA3DE;
-  margin: 1.5em 0; }
+  margin: 1em 0; }
   .button:hover {
     cursor: pointer; }
   .button p {
