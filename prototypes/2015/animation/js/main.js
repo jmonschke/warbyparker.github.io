@@ -17,6 +17,10 @@ jQuery(document).ready(function($){
         event.preventDefault();
         smoothScroll($(this.hash));
     });
+    $('.smooth-anchor-link').on('click', function(event){
+        event.preventDefault();
+        smoothScroll($(this.hash));
+    });
     $('.cd-scroll-up').on('click', function(event){
         event.preventDefault();
         smoothScroll($(this.hash));
