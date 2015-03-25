@@ -542,7 +542,7 @@ textarea {
   *zoom: 1; }
 
 /**********************************************************
-Project styles 
+Project styles
 **********************************************************/
 html * {
   -webkit-font-smoothing: antialiased;
@@ -709,9 +709,8 @@ h1, h2, h3, h4, h5, h6, p, li, a {
 
 .input__label-content {
   position: relative;
-  display: block;
-  padding: 1.6em 0;
-  width: 100%; }
+  display: inline-block;
+  padding: 1.6em 0;}
 
 .graphic {
   position: absolute;
@@ -1794,9 +1793,6 @@ a {
 .input__field--akira {
   text-align: left; }
 
-.input__label--akira::before {
-  background: #fff; }
-
 .input__label--akira {
   background: none; }
 
@@ -1851,14 +1847,28 @@ Checkbox styles
   font-size: 16px; }
 
 .input__label-content {
-  padding: 0.9em 0; }
+  padding: 0.9em 0.1em; }
+
+.input__label--akira::before {
+  background: #fff; }
 
 .input__field--akira:focus + .input__label--akira .input__label-content--akira,
 .input--filled .input__label-content--akira {
   -webkit-transform: translate3d(0, -1.5em, 0);
-  transform: translate3d(0, -1.5em, 0);
-  background-color: #fff; }
+  transform: translate3d(0, -1.5em, 0);}
 
+.input__field--akira:focus + .input__label--akira .input__label-content--akira:before,
+.input--filled .input__label-content--akira:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  height: 1px;
+  width: 100%;
+  background: white;
+  z-index: -1;
+}
+/*
 .input__field--akira:focus + .input__label--akira .input__label-content--akira.field-name,
 .input--filled .input__label-content--akira.field-name {
   width: 190px; }
@@ -1878,6 +1888,8 @@ Checkbox styles
 .input__field--akira:focus + .input__label--akira .input__label-content--akira.field-promo,
 .input--filled .input__label-content--akira.field-promo {
   width: 176px; }
+
+*/
 
 legend {
   padding: 0 5px;
