@@ -711,7 +711,8 @@ h1, h2, h3, h4, h5, h6, p, li, a {
   position: relative;
   display: inline-block;
   padding: 1.6em 0;
-  z-index: 10;}
+  z-index: 10;
+  pointer-events: none;}
 
 .graphic {
   position: absolute;
@@ -1863,8 +1864,8 @@ Checkbox styles
   content: '';
   position: absolute;
   top: 50%;
-  margin-top: -2px;
-  height: 1px;
+  margin-top: -5px;
+  height: 10px;
   width: 100%;
   background: white;
   z-index: -1;
@@ -2290,3 +2291,8 @@ Button css
     margin-left: -220px;
     margin-top: -220px;
     transform: scaleX(0) scaleY(0); }
+
+/* Terrible autocomplete color change */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
