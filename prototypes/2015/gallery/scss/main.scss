@@ -1,0 +1,185 @@
+
+@import 'normalize';
+@import 'base';
+@import 'mixins';
+
+@import 'layout';
+
+/**********************************************************
+Project styles 
+**********************************************************/
+
+$blue-warby: #3AA3DE;
+$white: #fff;
+$text-black: #333;
+$black: #333;
+
+$content-max-width: 600em / 16; //600px
+
+$utopia: 'Utopia Std', georgia, serif;
+$utopia-bold: 'Utopia Std Semibold', georgia, serif;
+$proxima-nova: 'Proxima Nova Rg', helvetica, sans-serif;
+
+html * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+html, body {
+	height: 100%
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: $utopia;
+}
+
+body.theme-blue {
+	color: $white;
+	background-color: $blue-warby;
+}
+
+body.theme-white {
+	color: $text-black;
+	background-color: $white;
+}
+
+.content {
+	width: 96%;
+	max-width: 801px;
+	margin: 0 auto;
+	padding: 8em 0;
+
+}
+
+.center-center {
+	position: absolute;
+	@include center;
+	max-width: $content-max-width;
+}
+
+@include MQ(L) {
+	body.theme-white {
+		
+	}
+}
+
+header {
+	background-color: $blue-warby;
+	color: $white;
+	// height: 100vh;
+	min-height: 100%;
+	text-align: center;
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	.pinata {
+		margin-bottom: 3em;
+
+	}
+	.wp-logo {
+		height: 16px;
+		width: auto;
+	}
+	h1 {
+		font-size: 42px;
+		margin-top: 0.3em;
+	}
+
+}
+
+.introduction, .conclusion {
+	position: relative;
+	min-height: 100%;
+	padding: 5em 0;
+}
+
+.introduction {
+	background-color: #eee;
+	color: $black;
+}
+
+.conclusion {
+	background-color: $black;
+	color: $white;
+}
+
+
+
+
+.content-header {
+	width: 96%;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+	transition: all 1s;
+}
+
+
+/**********************************************************/
+
+.glasses-wall img {
+	float: left;
+	margin-bottom: 3em;
+}
+
+.sunglasses {
+	background: url(../img/lifestyle-sunglasses.png) no-repeat center center fixed;
+	
+	min-height: 550px;
+}
+
+.headturn-container {
+	height: 358px;
+	width: 800px;
+	position: relative;
+	overflow: hidden;
+	position: relative;
+}
+
+#headturn {
+	position: relative;
+	left: -1600px;
+}
+
+.glasses-slideup1, .glasses-slideup2, .glasses-slideup3, .glasses-slideup4, .glasses-slideup5, .glasses-slideup6, .glasses-slideup8, .glasses-slideup9, .glasses-slideup10, .glasses-slideup11, .glasses-slideup12 {
+	transform: translateY(60px);
+	@include opacity(0);
+	transition: all 1s;
+}
+
+.glasses-slideup10, .glasses-slideup11, .glasses-slideup12 {
+	transform: translateY(100px);
+	@include opacity(0);
+	transition: all 1s;
+}
+
+.glasses-slideup1.slide-up, .glasses-slideup2.slide-up, .glasses-slideup3.slide-up, .glasses-slideup4.slide-up, .glasses-slideup5.slide-up, .glasses-slideup6.slide-up, .glasses-slideup8.slide-up, .glasses-slideup9.slide-up, .glasses-slideup10.slide-up, .glasses-slideup11.slide-up, .glasses-slideup12.slide-up {
+	transform: translateY(0px);	
+	transition: all 0.5s;
+	@include opacity(1);
+}
+  
+
+  #about { 
+	background: url(../img/lifestyle-party.png) no-repeat center center fixed; 
+	height: 500px;
+	margin: 0 auto; 
+    width: 100%;    
+}
+  
+.glasses-block {
+	margin-top: 2em;
+}
+
+a {
+	color: $blue-warby;
+	text-decoration: none;
+}
