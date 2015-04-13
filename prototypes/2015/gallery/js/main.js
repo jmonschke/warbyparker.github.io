@@ -3,7 +3,7 @@
 var waypoint = new Waypoint({
   element: document.getElementById('headturn'),
   handler: function(direction) {
-    $( "#headturn" ).css( "left", "-1600px" );
+    $( "#headturn" ).css( "left", "0px" );
   },
   offset: '50%'
 })
@@ -19,7 +19,7 @@ var waypoint = new Waypoint({
 var waypoint = new Waypoint({
   element: document.getElementById('headturn'),
   handler: function(direction) {
-    $( "#headturn" ).css( "left", "0px" );
+    $( "#headturn" ).css( "left", "-1600px" );
   },
   offset: '20%'
 })
@@ -104,13 +104,12 @@ var waypoint = new Waypoint({
   offset: '93%'
 })
 
-
 var waypoint = new Waypoint({
   element: document.getElementsByClassName('glasses-slideup10'),
   handler: function(direction) {
     $( ".glasses-slideup10" ).toggleClass("slide-up");
   },
-  offset: '86%'
+  offset: '93%'
 })
 
 var waypoint = new Waypoint({
@@ -118,13 +117,39 @@ var waypoint = new Waypoint({
   handler: function(direction) {
     $( ".glasses-slideup11" ).toggleClass("slide-up");
   },
-  offset: '86%'
+  offset: '93%'
 })
 
 var waypoint = new Waypoint({
   element: document.getElementsByClassName('glasses-slideup12'),
   handler: function(direction) {
     $( ".glasses-slideup12" ).toggleClass("slide-up");
+  },
+  offset: '93%'
+})
+
+
+
+var waypoint = new Waypoint({
+  element: document.getElementsByClassName('glasses-slideup13'),
+  handler: function(direction) {
+    $( ".glasses-slideup13" ).toggleClass("slide-up");
+  },
+  offset: '86%'
+})
+
+var waypoint = new Waypoint({
+  element: document.getElementsByClassName('glasses-slideup14'),
+  handler: function(direction) {
+    $( ".glasses-slideup14" ).toggleClass("slide-up");
+  },
+  offset: '86%'
+})
+
+var waypoint = new Waypoint({
+  element: document.getElementsByClassName('glasses-slideup15'),
+  handler: function(direction) {
+    $( ".glasses-slideup15" ).toggleClass("slide-up");
   },
   offset: '86%'
 })

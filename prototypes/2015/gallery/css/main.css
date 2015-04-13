@@ -587,7 +587,7 @@ h1, h2, h3, h4, h5, h6, p, li, a {
 
 #headturn {
   position: relative;
-  left: -1600px; }
+  left: 0px; }
 
 .glasses-slideup1, .glasses-slideup2, .glasses-slideup3, .glasses-slideup4, .glasses-slideup5, .glasses-slideup6, .glasses-slideup8, .glasses-slideup9, .glasses-slideup10, .glasses-slideup11, .glasses-slideup12 {
   -webkit-transform: translateY(60px);
