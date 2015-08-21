@@ -1,0 +1,1 @@
+var waypoint=new Waypoint({element:document.getElementById("hero"),handler:function(){alert("Basic waypoint triggered")}});
