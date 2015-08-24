@@ -806,9 +806,9 @@ h1, .alpha {
 .store-info2 {
   position: absolute;
   bottom: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.75);
-  width: 100%; }
+  left: 70px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%; }
   .store-info2 p {
     font-family: "Proxima Nova Rg", helvetica, sans-serif;
     margin: 0;
