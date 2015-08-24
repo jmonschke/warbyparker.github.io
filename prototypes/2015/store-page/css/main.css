@@ -803,6 +803,25 @@ h1, .alpha {
   -webkit-animation: fade-in 2s ease-in-out forwards 0.6s;
           animation: fade-in 2s ease-in-out forwards 0.6s; }
 
+.store-info2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 100%; }
+  .store-info2 p {
+    font-family: "Proxima Nova Rg", helvetica, sans-serif;
+    margin: 0;
+    padding: 15px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.get-directions {
+  color: #3AA3DE;
+  text-decoration: none;
+  font-family: "Proxima Nova Rg", helvetica, sans-serif; }
+
 .hero {
   background: url(../img/interior1.jpg) no-repeat center center fixed;
   background-size: cover; }

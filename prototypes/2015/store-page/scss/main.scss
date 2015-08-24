@@ -225,6 +225,29 @@ $max-width: 1600px;
 	animation: fade-in 2s ease-in-out forwards 0.6s;
 }
 
+.store-info2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255,255,255,0.75);
+	
+	width: 100%;
+	p {
+		font-family: $proxima-nova;
+		margin: 0;
+		padding: 15px 0;
+		font-size: 15px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+}
+
+.get-directions {
+	color: $blue-warby;
+	text-decoration: none;
+	font-family: $proxima-nova;
+}
+
 
 .hero {
 	background: url(../img/interior1.jpg) no-repeat center center fixed; 
