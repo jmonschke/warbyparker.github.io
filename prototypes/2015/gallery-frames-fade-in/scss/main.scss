@@ -1,0 +1,61 @@
+
+@import 'normalize';
+@import 'base';
+
+@import 'layout';
+
+/**********************************************************
+Project styles 
+**********************************************************/
+
+$blue-warby: #3AA3DE;
+$white: #fff;
+$text-black: #333;
+
+$utopia: 'Utopia Std', georgia, serif;
+$utopia-bold: 'Utopia Std Semibold', georgia, serif;
+$proxima-nova: 'Proxima Nova Rg', helvetica, sans-serif;
+
+html * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+	font-family: $utopia;
+}
+
+body.theme-blue {
+	color: $white;
+	background-color: $blue-warby;
+}
+
+body.theme-white {
+	color: $text-black;
+	background-color: $white;
+}
+
+.content {
+	width: 96%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+@include MQ(L) {
+	body.theme-white {
+		
+	}
+}
+
+@import 'gallery';
+
+
